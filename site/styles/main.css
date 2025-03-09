@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-
+    color: rgb(196, 190, 217)
 }
 
 .width-wrap{
@@ -13,6 +13,7 @@ html {
     border: 1px solid rgba(0,0,0,0.3);
     border-top: none;
     margin-bottom: 3em;
+    background-color: rgb(20, 0, 84);
 }
 
 hr{
@@ -21,5 +22,116 @@ hr{
     max-width: 890px;
     margin-top: 3em;
     margin-bottom: 2em;
-    border-bottom: 3px dotted rgba(19,1,77,0.9);
+    border: none;
+    border-bottom: 3px dotted rgba(16, 4, 56, 0.9);
+}
+
+dt::after{
+    content: ":";
+}
+
+body{
+    background-color: rgb(29, 4, 109)
+}
+
+h1{
+    color: rgb(0, 143, 47)
+}
+
+h2{
+    color: rgb(50, 180, 93);
+}
+
+h3{
+    color: rgb(48, 130, 75);
+}
+
+a{
+    color: rgb(0, 255, 0);
+}
+
+header a{
+    color: rgb(0, 255, 153);
+}
+
+*::selection{
+    background-color: rgb(144, 123, 212);
+}
+
+header {
+    border-top: 4px solid rgba(0,0,0,0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav{
+    border-bottom: 1px dotted rgba(255,255,255,0.3);
+    padding-left:2em;
+    padding-right:2em;
+}
+
+header nav ul{
+    margin:0;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    border-top: 4px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em 1em 0.5em 1em;  /* Top Right Bottom Left*/
+    margin-top: -4px;
+}
+
+header nav ul li a:hover{
+    border-top: 4px solid rgb(0, 255, 153);
+}
+
+td{
+    padding: 0.3em, 1em, 0.3em, 1em;
+    background-color: rgba(255,255,255,0.05);
+}
+
+th{
+    padding: 0.3em, 1em, 0.3em, 1em;
+}
+
+thead {
+    background-color: rgba(255,255,255,0.2);
+}
+
+tfoot {
+    background-color: rgba(255,255,255,0.2);
+}
+
+tbody th{
+    background-color: rgba(255,255,255,0.2);
+}
+
+tbody tr:nth-of-type(even){
+    background-color: rgba(255,255,255,0.15);
+}
+
+label{
+    display:block;
+}
+
+input[type="radio"] + label, 
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+button[type="submit"]{
+    border: none;
+    padding: 1em,3em,1em,3em;
+    color:rgb(20, 0, 84);
+    background-color: rgb(144, 123, 212);
+}
+
+input:invalid, select:invalid, textarea:invalid{
+    background-color: rgb(255, 0, 0);
 }
