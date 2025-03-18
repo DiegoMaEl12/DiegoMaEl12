@@ -27,10 +27,10 @@
         </header>
         <main>
             <h1> Welcome to Diego's website!</h1>
-            <a href="/site/images/Diego_Baseball.jpg">
-                <img src="/site/images/Diego_Baseball.jpg" alt="Myself hitting a baseball"
+            <a href="images/Diego_Baseball.jpg">
+                <img src="images/Diego_Baseball.jpg" alt="Myself hitting a baseball"
                     sizes="(max-width:500px) 150px, 300px"
-                    srcset="/site/images/Diego150.jpg 150w, /site/images/Diego300.jpg 300w">
+                    srcset="images/Diego150.jpg 150w, images/Diego300.jpg 300w">
             </a>
             <p>My name is Diego Martinez, I am from Coahuila, Mexico.
                 I am currently studying computer programming at Sault college.
@@ -39,14 +39,16 @@
                 but I am also disciplined and study when necessary.
                 I am not really a lot into web developing but I'd love to learn more about this. </p>
             <h2> My favorite things</h2>
-            <a href="https://www.saultcougars.ca/landing/index">
+            
                 <figure>
-                    <img src="images/logo.png" width="250" height="200" alt="SC Cougars Logo">
+                    <a href="https://www.saultcougars.ca/landing/index">
+                        <img src="images/logo.png" width="250" height="200" alt="SC Cougars Logo">
+                    </a>
                     <figcaption>
                         <strong> Figure 1. </strong> Sault college varsity teams (cougars) logo.
                     </figcaption>
                 </figure>
-            </a>
+            
             <h3> Sports</h3>
             <ol>
                 <li> Baseball</li>
@@ -70,7 +72,7 @@
                     href="https://ia601307.us.archive.org/33/items/childrensshortworks11_1102_librivox/childrensshortworks011_hanselandgretel_djk.mp3">Download
                     the track </a>
             </audio>
-            <h3>YouTube video</h3>
+            <h3>YouTube Video</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FLSGBkZlp9M?si=FjnspRz3-mBSpA48"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -83,6 +85,15 @@
                 <cite>&mdash; <span class="author">Socrates</span></cite>
             </blockquote>
             <p>&copy; 2025 <a href="mailto:24040549@saultcollege.ca?subject=Message%20from%20Diego's%20website">Diego Martinez</a></p>
+            <picture>
+                <source srcset="images/sc-logo/sc-logo.svg" type="image/svg+xml" width="70">
+                <img src="images/sc-logo/sc-logo.png"
+                    srcset="images/sc-logo/sc-logo_105.png 1.5x,
+                    images/sc-logo/sc-logo_140.png 2x"
+                    alt="Sault college logo"
+                    width="200"
+                    height="100">
+            </picture>
         </footer>
         <a href="#top" title="Back to top">◤</a>
     </div>
