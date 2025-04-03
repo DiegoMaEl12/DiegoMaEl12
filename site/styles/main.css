@@ -3,10 +3,13 @@ html {
     color: rgb(196, 190, 217)
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .width-wrap{
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
@@ -17,7 +20,7 @@ html {
 }
 
 hr{
-    width:50%;
+    width:50vw;
     min-width: 300px;
     max-width: 890px;
     margin-top: 3em;
@@ -92,12 +95,12 @@ header nav ul li a:hover{
 }
 
 td{
-    padding: 0.3em, 1em, 0.3em, 1em;
+    padding: 0.3em 1em;
     background-color: rgba(255,255,255,0.05);
 }
 
 th{
-    padding: 0.3em, 1em, 0.3em, 1em;
+    padding: 0.3em 1em;
 }
 
 thead {
@@ -127,7 +130,7 @@ input[type="checkbox"] + label {
 
 button[type="submit"]{
     border: none;
-    padding: 1em,3em,1em,3em;
+    padding: 1em 3em;
     color:rgb(20, 0, 84);
     background-color: rgb(144, 123, 212);
 }
