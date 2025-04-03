@@ -44,7 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-    color: rgb(0, 143, 47);
+    background: linear-gradient(90deg, rgb(1, 83, 31) 0%, rgb(10, 168, 62) 52%, rgb(7, 223, 18) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     
 }
 
@@ -171,3 +174,57 @@ iframe {
     padding: 0;
     list-style-type: none;
 } 
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    width: 100%;
+}
+
+.courses {
+    grid-column: span 3;
+    margin-top: 1em;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.courses td, .courses th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.courses caption {
+    caption-side: bottom;
+}
+
+#making-a-table {
+    display: grid;
+    grid-column: span 3;
+    margin-top: 1em;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bio img {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(255,255,255,0.3);
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+a[href="#top"]{
+    text-shadow: 2px 2px 5px rgba(255,255,255, 0.5);
+}
+
+a[href="#top"]:hover{
+    text-decoration: none;
+}
