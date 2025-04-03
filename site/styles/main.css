@@ -34,11 +34,18 @@ dt::after{
 }
 
 body{
-    background-color: rgb(29, 4, 109)
+    background-color: rgb(29, 4, 109);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', sans-serif;
 }
 
 h1{
-    color: rgb(0, 143, 47)
+    color: rgb(0, 143, 47);
+    
 }
 
 h2{
@@ -51,6 +58,11 @@ h3{
 
 a{
     color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 header a{
@@ -88,6 +100,10 @@ header nav ul li a {
     vertical-align: top;
     padding: 1em 1em 0.5em 1em;  /* Top Right Bottom Left*/
     margin-top: -4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 header nav ul li a:hover{
@@ -138,3 +154,20 @@ button[type="submit"]{
 input:invalid, select:invalid, textarea:invalid{
     background-color: rgb(255, 0, 0);
 }
+
+ol {
+    list-style-type: upper-roman;
+}
+
+iframe {
+    border-radius: 0 2em 0 2em;
+    -webkit-border-radius: 0 2em 0 2em;
+    -moz-border-radius: 0 2em 0 2em;
+    -ms-border-radius: 0 2em 0 2em;
+    -o-border-radius: 0 2em 0 2em;
+}
+
+.radio-list{
+    padding: 0;
+    list-style-type: none;
+} 
