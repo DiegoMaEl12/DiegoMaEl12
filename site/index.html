@@ -31,6 +31,7 @@
                     <li> <a href="glossary.html">Glossary </a></li>
                     <li> <a href="survey.html">Survey</a></li>
                     <li> <a href="lorem.html">Lorem</a></li>
+                    <li> <a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,6 +42,7 @@
                     <img src="images/Diego_Baseball.jpg" alt="Myself hitting a baseball"
                         sizes="(max-width:500px) 150px, 300px"
                         srcset="images/Diego150.jpg 150w, images/Diego300.jpg 300w">
+                    <img class="paperclip" src="images/paperclip.png" alt="paperclip">
                 </a>
                 <p>My name is Diego Martinez, I am from Coahuila, Mexico.
                     I am currently studying computer programming at Sault college.
@@ -131,45 +133,72 @@
                 </div>
             </div>
             <h2> My favorite things</h2>
+            <div class="favourites">
+                <input type="radio" id="tab1" name="fav-tabs" checked>
+                <label for="tab1">
+                    <h3>Go Cougs!</h3>
+                </label>
+                <div>
+                    <figure>
+                        <a href="https://www.saultcougars.ca/landing/index">
+                            <img src="images/logo.png" width="250" height="200" alt="SC Cougars Logo">
+                        </a>
+                        <figcaption>
+                            <strong> Figure 1. </strong> Sault college varsity teams (cougars) logo.
+                        </figcaption>
+                    </figure>
+                </div>
+                <input type="radio" id="tab2" name="fav-tabs">
+                <label for="tab2">
+                    <h3> Sports</h3>
+                </label>
+                <div>
+                    <ol>
+                        <li> Baseball</li>
+                        <li> Football</li>
+                        <li> Basketball</li>
+                    </ol>
+                </div>
 
-            <figure>
-                <a href="https://www.saultcougars.ca/landing/index">
-                    <img src="images/logo.png" width="250" height="200" alt="SC Cougars Logo">
-                </a>
-                <figcaption>
-                    <strong> Figure 1. </strong> Sault college varsity teams (cougars) logo.
-                </figcaption>
-            </figure>
-
-            <h3> Sports</h3>
-            <ol>
-                <li> Baseball</li>
-                <li> Football</li>
-                <li> Basketball</li>
-            </ol>
-            <h3> Haiku</h3>
-            <p> I've said it before / And I will<br>
-                say it again. / I've said it<br>
-                before.<br>
-                <cite>
-                    by <span class="author">Ariel Elias</span>
-                </cite>
-            </p>
-            <h3>Public Domain Audiobook</h3>
-            <audio
-                src="https://ia601307.us.archive.org/33/items/childrensshortworks11_1102_librivox/childrensshortworks011_hanselandgretel_djk.mp3"
-                controls>
-                Your browser does not support audio elements.
-                <a
-                    href="https://ia601307.us.archive.org/33/items/childrensshortworks11_1102_librivox/childrensshortworks011_hanselandgretel_djk.mp3">Download
-                    the track </a>
-            </audio>
-            <h3>YouTube Video</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FLSGBkZlp9M?si=FjnspRz3-mBSpA48"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                <input type="radio" id="tab3" name="fav-tabs">
+                <label for="tab3">
+                    <h3> Haiku</h3>
+                </label>
+                <div>
+                    <p> I've said it before / And I will<br>
+                        say it again. / I've said it<br>
+                        before.<br>
+                        <cite>
+                            by <span class="author">Ariel Elias</span>
+                        </cite>
+                    </p>
+                </div>
+                <input type="radio" id="tab4" name="fav-tabs">
+                <label for="tab4">
+                    <h3>Public Domain Audiobook</h3>
+                </label>
+                <div>
+                    <audio
+                        src="https://ia601307.us.archive.org/33/items/childrensshortworks11_1102_librivox/childrensshortworks011_hanselandgretel_djk.mp3"
+                        controls>
+                        Your browser does not support audio elements.
+                        <a
+                            href="https://ia601307.us.archive.org/33/items/childrensshortworks11_1102_librivox/childrensshortworks011_hanselandgretel_djk.mp3">Download
+                            the track </a>
+                    </audio>
+                </div>
+                <input type="radio" id="tab5" name="fav-tabs">
+                <label for="tab5">
+                    <h3>YouTube Video</h3>
+                </label>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FLSGBkZlp9M?si=FjnspRz3-mBSpA48"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </main>
         <footer>
             <hr>
