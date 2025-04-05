@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Diego Martinez">
     <meta name="description" content="Website for lab 2 of the course CSD112">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -27,6 +28,25 @@
         footer {
             clear: both;
         }
+        .float-left {
+            float: left;
+            margin: 0 1em 1em 0;
+        }
+        .float-right {
+            float: right;
+            margin: 0 0 1em 1em;
+        }
+
+        @media (max-width: 600px){
+            .float-left,
+            .float-right{
+                float: none;
+                display: block;
+                margin: 1em auto;
+                max-width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -34,6 +54,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
                 <ul>
                     <li> <a href="index.html">Home </a> </li>
                     <li> <a href="links.html">Links </a></li>
@@ -60,8 +82,8 @@
                 more. So, Jonathan, how was the pull-out?
             </p>
             <p>
-                <img src="https://loremflickr.com/320/240?random=1" alt="Random image"
-                    style="float:  right; width: 400px; height: 250px;">
+                <img src="https://loremflickr.com/320/240?random=1" class="float-right" width="400" height="250"
+                alt="Random image">
                 So, Jonathan, how was the pull-out? If anyone asks where I am, I've left the country. It's just,
                 sometimes...
                 people don't really say what they're really thinking. But when you capture the right moment, it says
@@ -82,8 +104,8 @@
                 Why do we even need weapons anyway? We have her.
             </p>
             <p>
-                <img src="https://loremflickr.com/320/240?random=2" alt="Random image"
-                    style="float: left; width: 400px; height: 250px;">
+                <img src="https://loremflickr.com/320/240?random=2" class="float-left" width="400" height="250"
+                alt="Random image">
                 Bitchin' Don't take it so personally, okay? I don't like most people. He's in the vast majority. Let's
                 burn that lab to the ground.
                 Hey kiddo, would you like a balloon? It's just, sometimes...
