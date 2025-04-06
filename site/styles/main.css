@@ -443,15 +443,23 @@ input#menu-toggle, label.sandwich-icon {
 }
 
 @media (max-width: 700px) {
+    h1{
+        margin-top: 1.5em;
+    }
     label.sandwich-icon {
         display: block;
         width: 40px;
-        height: 25px;
+        height: 30px;
         border-top: 5px solid;
         cursor: pointer;
         margin: 1em auto;
         position: relative;
-    }
+        transition: border-color 200ms ease;
+        -webkit-transition: border-color 200ms ease;
+        -moz-transition: border-color 200ms ease;
+        -ms-transition: border-color 200ms ease;
+        -o-transition: border-color 200ms ease;
+}
     label.sandwich-icon,
     label.sandwich-icon::before,
     label.sandwich-icon::after {
@@ -460,7 +468,12 @@ input#menu-toggle, label.sandwich-icon {
         width: 40px;
         border-top: 5px solid;
         position: absolute;
-    }
+        transition: transform 300ms ease, top 300ms ease;
+        -webkit-transition: transform 300ms ease, top 300ms ease;
+        -moz-transition: transform 300ms ease, top 300ms ease;
+        -ms-transition: transform 300ms ease, top 300ms ease;
+        -o-transition: transform 300ms ease, top 300ms ease;
+}
 
     label.sandwich-icon::before{
         top: 5px;
@@ -474,14 +487,35 @@ input#menu-toggle, label.sandwich-icon {
         flex-direction: column;
         height: 0;
         overflow: hidden;
-        transition: height 200ms ease;    
+        transition: height 200ms ease;
         -webkit-transition: height 200ms ease;
-        -moz-transition: height 200ms ease; 
+        -moz-transition: height 200ms ease;
         -ms-transition: height 200ms ease;
         -o-transition: height 200ms ease;
-    }
+}
     input#menu-toggle:checked + label.sandwich-icon + ul {
         height: auto;
     }
+    input#menu-toggle:checked + label.sandwich-icon{
+        border-color: transparent;
+    }
+
+    input#menu-toggle:checked + label.sandwich-icon::before{
+        top: 12.5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    input#menu-toggle:checked + label.sandwich-icon::after{
+        top: 12.5px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
 }
+
 
